@@ -1,6 +1,7 @@
 # micrometer-poc
 Proof of concept with Micrometer over Java Microservices. Monitors a Spring Boot application with the Prometheus and Micrometer.
 
+![Micrometer PoC](/docs/micrometer-poc-environment.jpg?raw=true "Micrometer proof of concept")
 
 Used technologies:
 - Spring Boot
