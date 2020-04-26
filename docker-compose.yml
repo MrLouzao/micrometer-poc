@@ -1,0 +1,26 @@
+version: "3.1"
+
+services:
+
+  monitoring-backend:
+    container_name: monitoring_backend
+    image: test/monitoring-backend
+    ports: 
+      - 8080:8080
+
+
+  prometheus-monitoring:
+    container_name: prometheus_monitoring
+    image: prom/prometheus
+    ports:
+      - 9090:9090
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+
+
+  grafana-monitoring:
+    container_name: grafana_monitoring
+    image: grafana/grafana
+    ports:
+      - 3000:3000
+
